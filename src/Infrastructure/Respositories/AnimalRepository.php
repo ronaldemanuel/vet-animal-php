@@ -1,7 +1,8 @@
 <?php
 
-require_once "./Repository.php";
-require_once "./src/models/User.class.php";
+namespace App\Vet\Repositories;
+use App\Vet\Repositories\Repository;
+use PDO;
 
 class AnimalRepository extends Repository
 {

@@ -1,19 +1,28 @@
 <?php
 
-require_once './User.class.php';
+namespace App\Vet\Models;
+use App\Vet\Models\User;
 
 class Animal {
+    private Int $id;
     private String $name;
     private String $race;
     private Int $age;
     private User $owner;
 
-    function  __construct(String $name, String $race, Int $age, User $owner)
+    function  __construct(Int $id, String $name, String $race, Int $age, User $owner)
     {
+        $this->id = $id;
         $this->name = $name;
         $this->race = $race;
         $this->age = $age;
         $this->owner = $owner;
+    }
+
+    // Id
+    public function getId(): Int
+    {
+        return $this->id;
     }
 
     // Name
@@ -55,6 +64,6 @@ class Animal {
     // User
     public function getUser(): User
     {
-        return $this->user;
+        return $this->owner;
     }
 }

@@ -1,5 +1,9 @@
 <?php
 
+namespace App\Vet\Repositories;
+use App\Vet\Models\User;
+use PDO;
+
 abstract class Repository
 {
     protected PDO $conn;

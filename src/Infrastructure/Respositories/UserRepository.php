@@ -1,7 +1,8 @@
 <?php
 
-require_once "./src/infrastructure/persistence/Connection.php";
-require_once "./src/models/User.class.php";
+namespace App\Vet\Repositories;
+use App\Vet\Persistence\Connection;
+use App\Vet\Models\User;
 use PDO;
 
 class UserRepository extends Repository
