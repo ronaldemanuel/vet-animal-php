@@ -12,6 +12,11 @@
 </head>
 
 <body>
+<nav class="navbar navbar-light bg-primary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="?view=loginUser">Vet Animal</a>
+  </div>
+</nav>
 <div class="list-group" style="margin: 10px 50px;">
     <!-- Button trigger modal -->
 <button type="button" class="btn btn-success" style="margin-bottom: 10px;" data-bs-toggle="modal" data-bs-target="#exampleModal2">

@@ -12,7 +12,13 @@
 </head>
 
 <body>
-    <div style="height: 100vh; display: flex; align-items: center; justify-content: center;">
+<nav class="navbar navbar-light bg-primary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="?view=listAnimals">Vet Animal</a>
+  </div>
+</nav>
+    <div style="height: 90vh; display: flex; align-items: center; justify-content: center;">
+    
     <form style="width: 800px;">
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Email address</label>
@@ -23,6 +29,7 @@
     <input type="password" class="form-control" id="exampleInputPassword1">
   </div>
   <button type="submit" class="btn btn-primary">Login</button>
+  <p>Não tem uma conta? <a href="?view=registerUser">Criar</a></p>
 </form>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
