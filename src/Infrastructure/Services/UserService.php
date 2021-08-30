@@ -1,7 +1,9 @@
 <?php
 
-namespace App\Vet\Services;
-use App\Vet\Repositories\UserRepository;
+namespace App\Vet\Infrastructure\Services;
+
+use App\Vet\Infrastructure\Persistence\Connection;
+use App\Vet\Infrastructure\Repositories\UserRepository;
 use App\Vet\Models\User;
 use Exception;
 

@@ -21,7 +21,7 @@
   </header>
   <main>
     <div style="height: 90vh; display: flex; align-items: center; justify-content: center;">
-      <form style="width: 800px;" action="?class=User&action=store" method="POST">
+      <form style="width: 800px;" action="/src/Controllers/UserController.php" method="POST">
         <div class="mb-3">
           <label for="exampleInputEmail1" class="form-label">Nome</label>
           <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="name">

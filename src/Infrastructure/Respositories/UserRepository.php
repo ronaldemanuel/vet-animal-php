@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Vet\Repositories;
-use App\Vet\Persistence\Connection;
-use App\Vet\Models\User;
+namespace App\Vet\Infrastructure\Repositories;
+
+use App\Vet\Infrastructure\Repositories\Repository;
 use PDO;
 
 class UserRepository extends Repository

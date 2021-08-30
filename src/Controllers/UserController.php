@@ -2,13 +2,13 @@
 
 namespace App\Vet\Controllers;
 
-require_once 'autoloader.php';
+use App\Vet\Infrastructure\Persistence\Connection;
+use App\Vet\Infrastructure\Repositories\UserRepository;
+use App\Vet\Infrastructure\Services\UserService;
 
-use App\Vet\Services\UserService;
-use App\Vet\Persistence\Connection;
-use App\Vet\Repositories\UserRepository;
 use Exception;
 
+require_once 'autoloader.php';
 class UserController
 {
     private UserService $userService;
@@ -17,37 +17,37 @@ class UserController
     {
         try {
             $this->userService = new UserService(new UserRepository(Connection::getConnection()));
+            var_dump($this->userService);
+            echo "jorge";
         } catch (Exception $e) {
             echo $e->getMessage();
         }
 
-        echo "jorge";
     }
 
-    // public function store() 
-    // {
-    //     echo "cleyton";
-    //     exit();
-    //     $name = $_POST['name'];
-    //     $email = $_POST['email'];
-    //     $password = $_POST['password'];
+    public function store() 
+    {
+        $mane = '123';
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $password = $_POST['password'];
 
-    //     if (!isset($name) || !isset($email) || !isset($password)) {
-    //         require_once 'index.php';
-    //     } else {
-    //         $res = $this->userService->createUser($name, $email, $password);
-    //         if(!$res) {
-    //             require_once 'src/Views/register.php';
-    //         } else {
-    //             require_once 'src/Views/login.php';
-    //         }
-    //     }
-    // }
+        if (!isset($name) || !isset($email) || !isset($password)) {
+            require_once 'index.php';
+        } else {
+            $res = $this->userService->createUser($name, $email, $password);
+            if(!$res) {
+                require_once 'src/Views/register.php';
+            } else {
+                require_once 'src/Views/login.php';
+            }
+        }
+    }
 
     // public function login()
     // {
-    //     $email = $_POST['email'];
-    //     $password = $_POST['password'];
+    //$email = $_POST['email'];
+   // $password = $_POST['password'];
 
     //     if (!isset($email) || !isset($password)) {
     //         require_once 'src/Views/register.php';
@@ -74,6 +74,3 @@ class UserController
         echo "deu bom";
     }
 }
-
-$userController = new UserController();
-$userController->deuBom();

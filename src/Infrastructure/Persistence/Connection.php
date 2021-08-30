@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Vet\Persistence;
+namespace App\Vet\Infrastructure\Persistence;
 use PDO;
 
 class Connection

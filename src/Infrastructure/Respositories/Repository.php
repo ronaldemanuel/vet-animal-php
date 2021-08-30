@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Vet\Repositories;
+namespace App\Vet\Infrastructure\Repositories;
 use App\Vet\Models\User;
 use PDO;
 
