@@ -64,6 +64,6 @@ class Animal {
     // User
     public function getUser(): User
     {
-        return $this->user;
+        return $this->owner;
     }
 }
