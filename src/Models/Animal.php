@@ -1,6 +1,7 @@
 <?php
 
-require_once './User.class.php';
+namespace App\Vet\Models;
+use App\Vet\Models\User;
 
 class Animal {
     private String $name;

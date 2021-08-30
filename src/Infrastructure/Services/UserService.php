@@ -1,7 +1,9 @@
 <?php
 
-require_once "./src/infrastructure/respositories/UserRepository.class.php";
-require_once "./src/models/User.class.php";
+namespace App\Vet\Services;
+use App\Vet\Repositories\UserRepository;
+use App\Vet\Models\User;
+use Exception;
 
 class UserService
 {

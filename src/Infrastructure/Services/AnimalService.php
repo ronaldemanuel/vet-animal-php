@@ -1,7 +1,9 @@
 <?php
 
-require_once "./src/infrastructure/respositories/AnimalRepository.class.php";
-require_once "./src/models/Animal.class.php";
+namespace App\Vet\Services;
+use App\Vet\Repositories\AnimalRepository;
+use App\Vet\Models\Animal;
+use Exception;
 
 class AnimalService
 {

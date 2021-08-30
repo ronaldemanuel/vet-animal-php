@@ -1,5 +1,8 @@
 <?php
 
+namespace App\Vet\Persistence;
+use PDO;
+
 class Connection
 {
     public static function getConnection()

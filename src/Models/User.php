@@ -1,6 +1,6 @@
 <?php
 
-use phpseclib3\Common\Functions\Strings;
+namespace App\Vet\Models;
 
 class User 
 {
