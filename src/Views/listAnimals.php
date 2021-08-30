@@ -12,23 +12,26 @@
 </head>
 
 <body>
-<nav class="navbar navbar-light bg-primary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="?view=loginUser">Vet Animal</a>
-  </div>
-</nav>
-<div class="list-group" style="margin: 10px 50px;">
-    <!-- Button trigger modal -->
-<button type="button" class="btn btn-success" style="margin-bottom: 10px;" data-bs-toggle="modal" data-bs-target="#exampleModal2">
-  Cadastrar animal
-</button>
-  <button data-bs-toggle="modal" data-bs-target="#exampleModal" type="button" class="list-group-item list-group-item-action" aria-current="true">Animal 0</button>
-  <button data-bs-toggle="modal" data-bs-target="#exampleModal" type="button" class="list-group-item list-group-item-action">Animal 1</button>
-  <button data-bs-toggle="modal" data-bs-target="#exampleModal" type="button" class="list-group-item list-group-item-action">Animal 2</button>
-  <button data-bs-toggle="modal" data-bs-target="#exampleModal" type="button" class="list-group-item list-group-item-action">Animal 3</button>
-  <button data-bs-toggle="modal" data-bs-target="#exampleModal" type="button" class="list-group-item list-group-item-action">Animal 4</button>
-</div>
-
+  <header>
+    <nav class="navbar navbar-light bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="?view=login" style="color: white;">Vet Animal</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="list-group" style="margin: 10px 50px;">
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-success" style="margin-bottom: 10px;" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+        Cadastrar animal
+      </button>
+      <button data-bs-toggle="modal" data-bs-target="#exampleModal" type="button" class="list-group-item list-group-item-action" aria-current="true">Animal 0</button>
+      <button data-bs-toggle="modal" data-bs-target="#exampleModal" type="button" class="list-group-item list-group-item-action">Animal 1</button>
+      <button data-bs-toggle="modal" data-bs-target="#exampleModal" type="button" class="list-group-item list-group-item-action">Animal 2</button>
+      <button data-bs-toggle="modal" data-bs-target="#exampleModal" type="button" class="list-group-item list-group-item-action">Animal 3</button>
+      <button data-bs-toggle="modal" data-bs-target="#exampleModal" type="button" class="list-group-item list-group-item-action">Animal 4</button>
+    </div>
+  </main>
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -70,11 +73,6 @@
             <label for="inputEmail4" class="form-label">Idade</label>
             <input type="email" class="form-control" id="inputEmail4">
         </div>
-        <div class="col-md-6">
-            <label for="inputPassword4" class="form-label">Peso</label>
-            <input type="password" class="form-control" id="inputPassword4">
-        </div>
-
         <div class="col-12">
             <button type="submit" class="btn btn-success">Cadastrar</button>
         </div>
